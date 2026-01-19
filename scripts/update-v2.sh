@@ -24,22 +24,22 @@ class Lattice < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/latticeHQ/latticeRuntime/releases/download/v${VERSION}/lattice_${VERSION}_darwin_arm64.zip"
+      url "https://github.com/latticeHQ/lattice/releases/download/v${VERSION}/lattice_${VERSION}_darwin_arm64.zip"
       sha256 "${DARWIN_ARM_SHA}"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/latticeHQ/latticeRuntime/releases/download/v${VERSION}/lattice_${VERSION}_darwin_amd64.zip"
+      url "https://github.com/latticeHQ/lattice/releases/download/v${VERSION}/lattice_${VERSION}_darwin_amd64.zip"
       sha256 "${DARWIN_INTEL_SHA}"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/latticeHQ/latticeRuntime/releases/download/v${VERSION}/lattice_${VERSION}_linux_arm64.tar.gz"
+      url "https://github.com/latticeHQ/lattice/releases/download/v${VERSION}/lattice_${VERSION}_linux_arm64.tar.gz"
       sha256 "${LINUX_SHA}"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/latticeHQ/latticeRuntime/releases/download/v${VERSION}/lattice_${VERSION}_linux_amd64.tar.gz"
+      url "https://github.com/latticeHQ/lattice/releases/download/v${VERSION}/lattice_${VERSION}_linux_amd64.tar.gz"
       sha256 "${LINUX_SHA}"
     end
   end
