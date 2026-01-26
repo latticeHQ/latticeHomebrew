@@ -2,7 +2,7 @@
 # frozen_string_literal: true
 
 class Lattice < Formula
-  desc "A self-hosted remote development platform"
+  desc "Runtime enforcement and identity infrastructure for autonomous AI agents"
   homepage "https://latticeruntime.com"
   version "0.7.0"
 
