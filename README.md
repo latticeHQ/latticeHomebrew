@@ -1,18 +1,20 @@
 # Lattice Homebrew Tap
 
-Official Homebrew tap for [Lattice Runtime](https://latticeruntime.com) - runtime enforcement and identity infrastructure for autonomous AI agents.
+### Install [Lattice — Agent Headquarters](https://latticeruntime.com) on macOS and Linux.
+
+The open-source runtime for AI agents. Identity. Authorization. Audit. Inference. Self-hosted. Runs anywhere.
 
 ## Installation
 
 ```bash
 brew tap latticeHQ/lattice
-brew install lattice
+brew install latticehq/lattice/lattice
 ```
 
 Or install directly:
 
 ```bash
-brew install latticeHQ/lattice/lattice
+brew install latticehq/lattice/lattice
 ```
 
 ## Upgrade
@@ -21,14 +23,43 @@ brew install latticeHQ/lattice/lattice
 brew upgrade lattice
 ```
 
-## Usage
+## Get Started
 
 ```bash
-lattice --help
+
+# Deploy an agent with identity, permissions, and audit
+lattice deploy my-agent --template docker --model llama-3.1-8b
+
+# Serve local models (Apple Silicon / NVIDIA)
+lattice inference serve --model mlx-community/Llama-3.2-3B-Instruct-4bit
+
+# Open the Workbench
+lattice workbench
 ```
 
-## About Lattice
+## The Lattice Ecosystem
 
-Lattice is a runtime enforcement layer that applies identity, authorization, audit, and deployment constraints to AI agents. It sits in the execution path, so violations are blocked by design, not by application code.
+Lattice is **Agent Headquarters** — the open-source runtime where AI agents get their identity, their permissions, their compute, and their orders.
 
-For more information, visit [latticeruntime.com](https://latticeruntime.com).
+| Component | What It Does |
+|-----------|-------------|
+| [**Runtime**](https://github.com/latticeHQ/lattice) | Enforcement kernel — identity, authorization, audit, deployment constraints |
+| [**Inference**](https://github.com/latticeHQ/lattice-inference) | Local LLM serving — MLX (Apple Silicon), CUDA (NVIDIA), zero-config clustering |
+| [**Workbench**](https://github.com/latticeHQ/lattice-workbench) | Agent IDE & operations console — multi-model chat, monitoring |
+| [**Registry**](https://github.com/latticeHQ/lattice-registry) | Community ecosystem — templates, modules, presets |
+
+All open source. Self-hosted. Vendor-neutral.
+
+## Links
+
+- [Website](https://latticeruntime.com)
+- [GitHub](https://github.com/latticeHQ/lattice)
+- [Documentation](https://docs.latticeruntime.com)
+
+---
+
+<div align="center">
+
+**Your agents. Your models. Your rules. Your infrastructure.**
+
+</div>
