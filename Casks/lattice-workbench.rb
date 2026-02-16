@@ -17,6 +17,12 @@ cask "lattice-workbench" do
 
   app "Lattice.app"
 
+  # Remove quarantine until app is code-signed and notarized
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args: ["-dr", "com.apple.quarantine", "#{appdir}/Lattice.app"]
+  end
+
   zap trash: [
     "~/Library/Application Support/Lattice",
     "~/Library/Preferences/com.latticeruntime.workbench.plist",
