@@ -1,11 +1,11 @@
 # typed: false
 # frozen_string_literal: true
 
-# Lattice — the complete AI agent ecosystem.
-# One install gives you the runtime CLI + Workbench (agent IDE & operations console).
+# Lattice Runtime CLI — identity, authorization, audit, and deployment for AI agents.
+# The Workbench (desktop IDE) is distributed separately as an Electron app.
 # Usage: brew install latticehq/lattice/lattice
 class Lattice < Formula
-  desc "The AI agent ecosystem — runtime, workbench, inference, all in one install"
+  desc "Runtime enforcement and identity infrastructure for autonomous AI agents"
   homepage "https://latticeruntime.com"
   version "0.11.2"
   license "MIT"
@@ -32,32 +32,19 @@ class Lattice < Formula
     end
   end
 
-  depends_on "node@22"
-
   def install
-    # Runtime CLI
     bin.install "lattice"
-
-    # Workbench (agent IDE & operations console) via npm
-    system "npm", "install", "--global", "--prefix", libexec, "lattice-workbench@0.15.0"
-    (bin/"lattice-workbench").write <<~EOS
-      #!/bin/bash
-      exec "#{libexec}/bin/lattice-workbench" "$@"
-    EOS
-    chmod 0755, bin/"lattice-workbench"
   end
 
   def caveats
     <<~EOS
-      Lattice ecosystem installed!
-
-        lattice              — Runtime CLI (identity, authorization, audit, deployment)
-        lattice-workbench    — Agent IDE & operations console
+      Lattice Runtime CLI installed!
 
       Get started:
-        lattice version                    # Verify installation
-        lattice deploy my-agent            # Deploy an agent
-        lattice-workbench server --open    # Open Workbench in browser
+        lattice version                # Verify installation
+        lattice deploy my-agent        # Deploy an agent
+
+      Workbench (desktop IDE): https://latticeruntime.com/download
 
       Docs: https://docs.latticeruntime.com
     EOS
