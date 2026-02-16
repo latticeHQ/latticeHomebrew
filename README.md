@@ -1,31 +1,32 @@
 # Lattice Homebrew Tap
 
-### Install [Lattice Runtime CLI](https://latticeruntime.com) on macOS and Linux.
+### Install [Lattice](https://latticeruntime.com) on macOS and Linux.
 
-Runtime enforcement and identity infrastructure for autonomous AI agents.
-
-## Install
+## Install Everything
 
 ```bash
+# Runtime CLI (identity, authorization, audit, deployment)
 brew install latticehq/lattice/lattice
+
+# Workbench desktop app (agent IDE & operations console) — macOS only
+brew install --cask latticehq/lattice/lattice-workbench
 ```
 
 ## Upgrade
 
 ```bash
 brew upgrade lattice
+brew upgrade --cask lattice-workbench
 ```
 
 ## Quick Start
 
 ```bash
-lattice version                # Verify installation
+lattice version                # Verify runtime installation
 lattice deploy my-agent        # Deploy an agent
 ```
 
-## Workbench
-
-The Lattice Workbench (agent IDE & operations console) is a desktop app — download it at [latticeruntime.com/download](https://latticeruntime.com/download).
+Then open Lattice Workbench from your Applications folder.
 
 ## Links
 
