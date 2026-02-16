@@ -2,7 +2,6 @@
 # frozen_string_literal: true
 
 # Lattice Runtime CLI — identity, authorization, audit, and deployment for AI agents.
-# The Workbench (desktop IDE) is distributed separately as an Electron app.
 # Usage: brew install latticehq/lattice/lattice
 class Lattice < Formula
   desc "Runtime enforcement and identity infrastructure for autonomous AI agents"
@@ -43,8 +42,6 @@ class Lattice < Formula
       Get started:
         lattice version                # Verify installation
         lattice deploy my-agent        # Deploy an agent
-
-      Workbench (desktop IDE): https://latticeruntime.com/download
 
       Docs: https://docs.latticeruntime.com
     EOS
