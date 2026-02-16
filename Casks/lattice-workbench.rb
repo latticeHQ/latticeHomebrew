@@ -15,6 +15,8 @@ cask "lattice-workbench" do
   desc "Agent IDE & operations console for the Lattice ecosystem"
   homepage "https://latticeruntime.com"
 
+  depends_on formula: "latticehq/lattice/lattice"
+
   app "Lattice.app"
 
   # Remove quarantine until app is code-signed and notarized
