@@ -3,12 +3,12 @@ cask "lattice-workbench" do
 
   on_arm do
     url "https://github.com/latticeHQ/latticeWorkbench/releases/download/v#{version}/Lattice-#{version}-arm64.zip"
-    sha256 "fcd5b67e69ef166136af902b08c70606e3d5ec20bbc03c1280e116c3f8bf465a"
+    sha256 "95a2d09794c26fcb055a5925888206c7c80d7ddf98c0e4f0e7858297bead69ea"
   end
 
   on_intel do
     url "https://github.com/latticeHQ/latticeWorkbench/releases/download/v#{version}/Lattice-#{version}-x64.zip"
-    sha256 "3e630ded7a66caf2e4e136742203c7321af71a8b26e942bfca9a9a7bfebf0ada"
+    sha256 "9ae3eb571e6a3880196655b659b641216f87f4fc62cecb2d8797b139cc4f44c0"
   end
 
   name "Lattice Workbench"
