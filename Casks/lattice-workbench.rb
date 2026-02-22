@@ -3,7 +3,7 @@ cask "lattice-workbench" do
 
   on_arm do
     url "https://github.com/latticeHQ/latticeWorkbench/releases/download/v#{version}/Lattice-#{version}-arm64.zip"
-    sha256 "95a2d09794c26fcb055a5925888206c7c80d7ddf98c0e4f0e7858297bead69ea"
+    sha256 "3c49a54374e2c1fa0c570220f19177839802311d59fbf9651b11dd2317f13926"
   end
 
   on_intel do
