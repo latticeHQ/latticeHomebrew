@@ -1,5 +1,5 @@
 cask "lattice-workbench" do
-  version "0.1.0"
+  version "0.1.1"
 
   on_arm do
     url "https://github.com/latticeHQ/latticeWorkbench/releases/download/v#{version}/Lattice-#{version}-arm64.zip"
@@ -8,7 +8,7 @@ cask "lattice-workbench" do
 
   on_intel do
     url "https://github.com/latticeHQ/latticeWorkbench/releases/download/v#{version}/Lattice-#{version}-x64.zip"
-    sha256 "9ae3eb571e6a3880196655b659b641216f87f4fc62cecb2d8797b139cc4f44c0"
+    sha256 "43f302cb944c7619d7a6081689d50c01d0b2d902b8fc2539e1ffa1f85ddd4c49"
   end
 
   name "Lattice Workbench"
