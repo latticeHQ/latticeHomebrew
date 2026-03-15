@@ -1,6 +1,18 @@
+<div align="center">
+
 # Lattice Homebrew Tap
 
-### Install [Lattice Runtime](https://github.com/latticeHQ/latticeRuntime) on macOS and Linux.
+### Install [Lattice Runtime](https://github.com/latticeHQ/latticeRuntime) on macOS and Linux
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](./LICENSE)
+
+**One command to run the institutional AI coordination layer on your hardware.**
+
+[Lattice Runtime](https://github.com/latticeHQ/latticeRuntime) · [Lattice Workbench](https://github.com/latticeHQ/latticeWorkbench) · [Discussions](https://github.com/latticeHQ/latticeRuntime/discussions)
+
+</div>
+
+---
 
 ## Install
 
@@ -23,17 +35,43 @@ brew upgrade --cask lattice-workbench
 
 ```bash
 lattice version            # Verify installation
-lattice server --tunnel    # Start Runtime with public tunnel
+lattice server             # Start Runtime — agents can connect immediately
 ```
 
-Then open Lattice Workbench from your Applications folder.
+Your coordination layer is running. Agents anywhere on the internet can connect to it through an automatically provisioned WireGuard tunnel. Your data stays on your machine.
+
+Then open Lattice Workbench from your Applications folder to start creating agents.
+
+## What You Get
+
+| Formula | What It Does |
+|---------|-------------|
+| `lattice` | The Lattice Runtime CLI — run the coordination layer, manage agents, deploy stacks, SSH into agents |
+| `lattice-workbench` | The Lattice Workbench desktop app — multi-model agent workspace with git worktree isolation |
+
+## Other Installation Methods
+
+If you're not using Homebrew:
+
+```bash
+# Binary (Linux, macOS, Windows — amd64, arm64)
+curl -fsSL https://install.latticeruntime.com | sh
+
+# Docker
+docker compose up -d
+
+# Kubernetes
+helm install lattice lattice/lattice --namespace lattice --create-namespace
+```
 
 ## Ecosystem
 
 | Component | Role | Repository |
 |-----------|------|------------|
+| [**Enterprise**](https://github.com/latticeHQ/latticeEnterprise) | Enterprise administration and governance | Coming soon |
 | **Homebrew** (this repo) | One-line install on macOS and Linux | You are here |
 | [**Inference**](https://github.com/latticeHQ/latticeInference) | Local AI serving — MLX on Apple Silicon, zero-config clustering | [latticeInference](https://github.com/latticeHQ/latticeInference) |
+| [**Operator**](https://github.com/latticeHQ/latticeOperator) | Self-hosted deployment management for Lattice infrastructure | [latticeOperator](https://github.com/latticeHQ/latticeOperator) |
 | [**Public**](https://github.com/latticeHQ/lattice) | Website + binary releases | [lattice](https://github.com/latticeHQ/lattice) |
 | [**Registry**](https://github.com/latticeHQ/latticeRegistry) | Community ecosystem — Terraform modules, templates, stacks | [latticeRegistry](https://github.com/latticeHQ/latticeRegistry) |
 | [**Runtime**](https://github.com/latticeHQ/latticeRuntime) | Coordination layer — identity, authorization, audit, budget | [latticeRuntime](https://github.com/latticeHQ/latticeRuntime) |
@@ -46,3 +84,11 @@ Then open Lattice Workbench from your Applications folder.
 - [Website](https://latticeruntime.com)
 - [GitHub](https://github.com/latticeHQ)
 - [GitHub Discussions](https://github.com/latticeHQ/latticeRuntime/discussions)
+
+---
+
+<div align="center">
+
+**[latticeruntime.com](https://latticeruntime.com)** — The open-source coordination layer for institutional AI.
+
+</div>

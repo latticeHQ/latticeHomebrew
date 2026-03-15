@@ -1,0 +1,55 @@
+# Security Policy
+
+## Reporting Security Vulnerabilities
+
+**Do not report security vulnerabilities through public GitHub issues.**
+
+Instead, please report them privately to:
+
+**Email:** security@latticeruntime.com
+
+Include the following information:
+
+- Description of the vulnerability
+- Steps to reproduce
+- Potential impact
+- Suggested fix (if any)
+
+We will respond within 48 hours and work with you to understand and address the issue.
+
+## Scope
+
+This security policy covers the **Lattice Homebrew Tap**, including:
+
+- Formula definitions and cask configurations
+- Download URLs and SHA256 checksums
+- Installation scripts and post-install hooks
+
+## What Qualifies as a Security Issue?
+
+Issues that could compromise:
+
+- **Supply chain integrity** — tampered binaries, incorrect checksums, compromised download URLs
+- **Installation security** — scripts that execute unintended commands during install
+- **Formula hijacking** — unauthorized modifications to formula definitions
+
+## What Is Not a Security Issue?
+
+- **Feature requests** — use GitHub Discussions
+- **Installation errors** — see Homebrew documentation
+- **Runtime vulnerabilities** — report to the [Runtime security policy](https://github.com/latticeHQ/latticeRuntime/blob/develop/SECURITY.md)
+
+## Disclosure Policy
+
+We follow **coordinated disclosure**:
+
+1. **Report received** — we acknowledge within 48 hours
+2. **Investigation** — we validate and assess severity
+3. **Fix developed** — we create and test a patch
+4. **Coordinated release** — we work with you on timing
+5. **Public disclosure** — after fix is deployed
+
+## Contact
+
+- **Security issues:** security@latticeruntime.com
+- **General questions:** [GitHub Discussions](https://github.com/latticeHQ/latticeRuntime/discussions)
